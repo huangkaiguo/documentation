@@ -1,0 +1,2 @@
+ListView: 如果ListView的layout_width或layout_height设置为wrap_content, ListView会多次调用getView, 去测试可见View的个数.
+          为了避免多次调用getView, 可以在ListView外部增加一层Layout, 把Layout的layout_width和layout_height设置为固定大小或match_parent/fill_parent, 将ListView的layout_width和layout_height设置为match_parent/fill_parent.
