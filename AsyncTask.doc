@@ -1,0 +1,3 @@
+AsyncTask: 1. AsyncTask默认是单线程.
+           2. 调用executeOnExecutor, 把AsyncTask的一系列任务分配给线程池, 实现多线程. 注意: Task执行完毕, 记得shutdown线程池.
+           3. 多个AsyncTask共享同一个线程池, 退出时, 如果AsyncTask没有执行完毕, 坚持Cancel掉每个AsyncTask.
